@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>
+    Cassidy Morgan
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/Artboard 1 copy 15.png">
+</head>
+
+<body>
+  <nav>
+    <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="web-design.html">Web Design</a></li>
+      <li><a href="film-photo.html">Film & Photography</a></li>
+      <li class="current"><a href="graphic-design.html">Graphic Design</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="close-menu"><a href="#"><i class="fas fa-times"></i></a></li>
+      <div class="social-media">
+        <a class="social-media-link" href="https://www.linkedin.com/in/cassidy-s-morgan/"><i
+            class="fab fa-linkedin-in"></i> <div class="hidden">LinkedIn</div></a>
+        <a class="social-media-link" href="https://github.com/morgancassidy98"><i class="fab fa-github"></i><div class="hidden">GitHub</div></a>
+        <a class="social-media-link" href="https://codepen.io/cassidymorgan"><i class="fab fa-codepen"></i><div class="hidden">Codepen</div></a>
+
+      </div>
+    </ul>
+  </nav>
+  <div class="main-content">
+      <h1 class="intro">Graphic Design</h1>
+    <p style="text-align:center" ;>Most of these designs were created to be social media content, while others were
+      practice creating logos.</p>
+
+    <div class="graphics">
+      <img data-enlargable src="images/saltyourgreens.png" alt="Salt Your Greens Graphic" style="cursor: zoom-in" >
+      <img data-enlargable src="images/kca.png" alt="KCA graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk1.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk2.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk3.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk4.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk5.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/logo2.png" style="width:50%" alt="savory scoops logo version 1" style="cursor: zoom-in">
+      <img  data-enlargable src="images/Morgan6Logos.png" style="width:100%" alt="savory scoops logo version 2 in 6 color schemes" style="cursor: zoom-in">
+
+
+    </div>
+
+  </div>
+  <footer>Cassidy Morgan | 2019</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".open-menu").click(function () {
+        $(".open-menu-section").css("display", "none");
+        $("nav ul").show();
+
+      });
+      $(".close-menu").click(function () {
+
+        $(".open-menu-section").css("display", "block");
+
+        $("nav ul").hide();
+      });
+
+      $(window).resize(function () {
+        if ($(window).width() >= 1041) {
+
+          $("nav ul").show();
+        } else {
+          $("nav ul").hide();
+          $(".open-menu-section").css("display", "block");
+        }
+      });
+      $('img[data-enlargable]').addClass('img-enlargable').click(function(){
+    var src = $(this).attr('src');
+    $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        backgroundSize: 'contain',
+        width:'100%', height:'100%',
+        position:'fixed',
+        zIndex:'10000',
+        top:'0', left:'0',
+        cursor: 'zoom-out'
+    }).click(function(){
+        $(this).remove();
+    }).appendTo('body');
+});
+    });
+  </script>
+</body>
+
+</html>

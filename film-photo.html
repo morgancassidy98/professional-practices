@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>
+    Cassidy Morgan
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/Artboard 1 copy 15.png">
+</head>
+
+<body>
+  <nav>
+    <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="web-design.html">Web Design</a></li>
+      <li class="current"><a href="film-photo.html">Film & Photography</a></li>
+      <li><a href="graphic-design.html">Graphic Design</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="close-menu"><a href="#"><i class="fas fa-times"></i></a></li>
+      <div class="social-media">
+        <a class="social-media-link" href="https://www.linkedin.com/in/cassidy-s-morgan/"><i
+            class="fab fa-linkedin-in"></i> <div class="hidden">LinkedIn</div></a>
+        <a class="social-media-link" href="https://github.com/morgancassidy98"><i class="fab fa-github"></i><div class="hidden">GitHub</div></a>
+        <a class="social-media-link" href="https://codepen.io/cassidymorgan"><i class="fab fa-codepen"></i><div class="hidden">Codepen</div></a>
+
+      </div>
+    </ul>
+  </nav>
+  <div class="main-content">
+      <h1 class="intro">Film Projects</h1>
+    <center>
+      <a class="photography-page" href="https://csmrules.wixsite.com/photography" target="_blank">Visit my separate
+        photography page!
+        (created in 2016 using Wix)</a>
+    </center>
+
+    <div class="film-projects">
+      <div class="film-project">
+        <h3>Demo Reel</h3>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4clz0HjdQOA" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p><span class="section-title">Role: </span>&nbsp;Editor</span><br><br><span class="section-title">Summary:
+        </span><br>A demo reel showcasing various roles I have filled when creating films.
+      </p>
+
+      <div class="film-project">
+        <h3>Angelic Demise</h3>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3SE-5WKpGD8" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p><span class="section-title">Role: </span>&nbsp;Director</span><br><br><span class="section-title">Summary:
+        </span><br>A horror film about a girl who is visited by a "guardian angel" who claims to help her bring her
+        mother
+        back from the dead.</p>
+
+
+
+      <div class="film-project">
+        <h3>The Portal</h3>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HxVyDPtoEqc" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p><span class="section-title">Role: </span>&nbsp;Director</span><br><br><span class="section-title">Summary:
+        </span><br>Ever had your elevator open on the wrong floor? Take a look at what happens to vloggers Sam and Caleb
+        as they take a ride in an elevator and meet an unexpected fate.</p>
+
+        <div class="film-project">
+            <h3>The Extremely Complicated and Fluid Life of Big Ron Johnson</h3>
+    
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8pPw6ZYYL10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p><span class="section-title">Role: </span>&nbsp;Director of Photography</span><br><br><span class="section-title">Summary:
+            </span><br>This film was made for the 2019 Norse Film Society 48 hour Golden Grapes film festival. The required line was "What is up guys?" or "What's up guys?" and the required prop was a drinking fountain.</p>
+
+
+
+    </div>
+  </div>
+  <footer>Cassidy Morgan | 2019</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".open-menu").click(function () {
+        $(".open-menu-section").css("display", "none");
+        $("nav ul").show();
+
+      });
+      $(".close-menu").click(function () {
+
+        $(".open-menu-section").css("display", "block");
+
+        $("nav ul").hide();
+      });
+
+      $(window).resize(function () {
+        if ($(window).width() >= 1041) {
+
+          $("nav ul").show();
+        } else {
+          $("nav ul").hide();
+          $(".open-menu-section").css("display", "block");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
